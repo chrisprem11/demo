@@ -33,5 +33,10 @@ public class MvcController {
 	public String doLogout() {
 		return "redirect :login";
 	}
+	
+	@GetMapping("/hello")
+	public String doLogt() {
+		return "redirect";
+	}
 
 }
