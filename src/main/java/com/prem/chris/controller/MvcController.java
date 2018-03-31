@@ -17,26 +17,21 @@ public class MvcController {
 		model.addAttribute("msg", msg);
 		return "index";
 	}
-	
+
 	@GetMapping("/login")
 	public String getLoginPage() {
 		return "login";
 	}
-	
+
 	@PostMapping(path = "/doLogin")
 	public String doLogin(@ModelAttribute("userInfo") LoginDTO loginDTO, Model model) {
 		model.addAttribute("username", loginDTO.getUsername());
 		return "welcome";
 	}
-	
+
 	@GetMapping("/logout")
 	public String doLogout() {
 		return "redirect :login";
-	}
-	
-	@GetMapping("/hello")
-	public String doLogt() {
-		return "redirect";
 	}
 
 }

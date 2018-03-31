@@ -1,0 +1,5 @@
+com\prem\chris\controller\MvcController.class
+com\prem\chris\config\AppConfig.class
+com\prem\chris\controller\TestController.class
+com\prem\chris\config\AppInitiliazer.class
+com\prem\chris\DTO\LoginDTO.class
